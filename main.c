@@ -411,7 +411,6 @@ void free_field_reassigned(Example_Struct *example_struct, char* buf) {
   example_struct->ptr = buf;
 }
 void not_free_field_reassigned(Example_Struct *example_struct, char* buf) {
-  free(example_struct->ptr);
   if (example_struct->size == 0) {
     example_struct->ptr = NULL;
     return;
