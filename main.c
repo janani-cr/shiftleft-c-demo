@@ -431,7 +431,6 @@ void *bad() {
 
 void *false_positive() {
   void *x = NULL;
-  free(x);
   if (cond)
     x = NULL;
   else
